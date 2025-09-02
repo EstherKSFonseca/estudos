@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="shortcut icon" href="../home page/favicon arvore.ico" type="image/x-icon">
+
+<body>
+   <h1>Galeria</h1>
+   
+    <div class="gallery">
+        <button class="img-btn" id="img1" style="background-image: url('parque-estadual-rio-doce-img-1.png');"></button>
+        <button class="img-btn" id="img2" style="background-image: url('parque-estadual-rio-doce-img3.png');"></button>
+        <button class="img-btn" id="img3" style="background-image: url('parque-estadual-rio-doce-img5.png');"></button>
+        <button class="img-btn" id="img4" style="background-image: url('parque-estadual-rio-doce-img6.png');"></button>
+    </div>
+
+    <div class="preview">
+        <img id="preview-img" src="parque-estadual-rio-doce-img-1.png" alt="Imagem Selecionada">
+    </div>
+
+    <script>
+        // Função para alterar a imagem na área de visualização
+        document.querySelectorAll('.img-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const imgSrc = this.style.backgroundImage.slice(5, -2);
+                document.getElementById('preview-img').src = imgSrc;
+            });
+        });
+    </script>
+    <p><a href="../home page/index.html">Voltar para a página inicial</a></p>
+</body>
+</html>
