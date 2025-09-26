@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/* RESET BÁSICO */
+* {
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif; /* Fonte simples e legível */
+}
+/* FUNDO */
+body {
+background: linear-gradient(180deg, #fceffd, #f7f3fa); /* Fundo clarinho */
+color: #333; /* Texto escuro para boa leitura */
+}
+/* TÍTULOS */
+h1 {
+color: #6d2a74; /* Roxo forte */
+}
+h2, h3 {
+color: #d16ba5; /* Rosa vibrante */
+}
+/* TEXTOS */
+p {
+color: #444; /* Cinza escuro */
+}
+/* LINKS */
+a {
+color: #6d2a74; /* Roxo forte */
+text-decoration: none;
+}
+a:hover {
+color: #d16ba5; /* Rosa vibrante no hover */
+}
+/* RODAPÉ */
+footer {
+background: #a55db7; /* Lilás médio */
+color: white;
+}
+/* BOTÕES */
+button, input[type=submit] {
+background: #d16ba5; /* Rosa vibrante */
+color: white;
+}
+button:hover, input[type=submit]:hover {
+background: #6d2a74; /* Roxo forte */
+}
+
